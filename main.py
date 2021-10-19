@@ -12,6 +12,29 @@ window.geometry("700x500")
 #conn.commit()
 #conn.close()
 
+def SecurityCheck():
+    page=Tk()
+    page.title("Security Verification")
+    page.geometry("700x500")
+    label=Label(page, text="Enter your secret code", font = "time 15 bold", bg="blue", fg="white", padx=250, pady=10)
+    label.grid(row=0, column=0, columnspan=20)
+    e6 = Entry(page)
+    e6.place(x=100, y=100)
+
+    secretcode = e6.get()
+
+
+    if secretcode==4689:
+        b4 = Button(page, text="Submit Code", font="time 10 bold", width=30, bg="blue", fg="white", command= orderdetailsofcustomers)
+        b4.place(x=100, y=140)
+
+    else:
+        print("Error, enter correct secret code")
+
+    b4 = Button(page, text="Submit Code", font="time 10 bold", width=30, bg="blue", fg="white", command=orderdetailsofcustomers)
+    b4.place(x=100, y=140)
+
+
 def calculate():
     aloo_paratha=e1.get()
     samosa=e2.get()
@@ -143,13 +166,14 @@ e4.place(x=250,y=230)
 e5=Entry(window)
 e5.place(x=180,y=430)
 
+
 b2=Button(window,text="bill",font = "time 10 bold",width=20,bg="blue", fg="white",command=calculate)
 b2.place(x=100,y=300)
 
 b3=Button(window,text="Submit Order",font = "time 10 bold",width=30,bg="blue", fg="white",command=submitorder)
 b3.place(x=380,y=380)
 
-b3=Button(window,text="Owner Options",font = "time 10 bold",width=30,bg="blue", fg="white",command=orderdetailsofcustomers)
+b3=Button(window,text="Owner Options",font = "time 10 bold",width=30,bg="blue", fg="white",command=SecurityCheck)
 b3.place(x=380,y=440)
 
 
