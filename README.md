@@ -1,2 +1,5 @@
-# Dhaba Management System
-The project was on menu display system in a dhaba and customer can enter items he wants to order and they can place order using this application. All the order information and their names would stores in a database. I have used Tkinter library in python for creating user interface and sqlite3 for storing order details in a table. I have used functions, Label, Button, Entry etc. These type of applications can cut man power cost in restaurents or dhaba.
+#CustomerOrdersManagementSystem
+
+This project offers services of displaying available menu items with their prices in a hotel/dhaba.. and customer can enter the quantity of items he/she wants to order and they can see the bill amount by clicking calculate bill button and if they are ok with bill amount they can submit order by clicking Submit button or they can also modify items... After submitting a pop up message would be displayed as your order has been submitted, please wait patiently... And owner can also see the history of orders by clicking owner options button at below on window and another window opens and asks for secret code that is only known to owner for security reasons...if secret code entered is correct then order history would be displayed there... 
+
+I have used Tkinter module for creating Graphical user interface window and Sqlite3 for storing customer orders...
